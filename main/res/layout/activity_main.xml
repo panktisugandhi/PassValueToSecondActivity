@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="USER NAME:"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:textColor="#000000"/>
+    <EditText
+        android:id="@+id/etname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:hint="USER NAME"
+        android:fontFamily="serif"/>
+    <TextView
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SUBJECT NAME:"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:fontFamily="serif"
+        android:textColor="#000000"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radiogrp"
+        android:padding="10dp">
+        <RadioButton
+            android:id="@+id/radiomcwc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="  MCWC"
+            android:checked="false"
+            android:textSize="20dp" />
+        <RadioButton
+            android:id="@+id/radioins"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="   INS"
+            android:checked="false"
+            android:textSize="20dp" />
+        <RadioButton
+            android:id="@+id/radioddbms"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="   DDBMS"
+            android:checked="false"
+            android:textSize="20dp" />
+        <RadioButton
+            android:id="@+id/radiodmbi"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="   DMBI"
+            android:checked="false"
+            android:textSize="20dp" />
+    </RadioGroup>
+    <TextView
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SUBJECT BOOK NAME:"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:fontFamily="serif"
+        android:textColor="#000000"/>
+    <RadioGroup
+        android:id="@+id/radiobook"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RadioButton
+        android:id="@+id/mcwcbook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:checked="false"
+        android:textColor="#000000"
+        android:text="Mobile Computing and Wireless Communication" />
+    <RadioButton
+        android:id="@+id/icnbook"
+        android:checked="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:text="Information and Network Security" />
+    <RadioButton
+        android:id="@+id/ddbmsbook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:checked="false"
+        android:textColor="#000000"
+        android:text="Distributed Database Management System" />
+    <RadioButton
+        android:id="@+id/dmbibook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:checked="false"
+        android:textColor="#000000"
+        android:text="Data Mining and Business Intelligence" />
+    </RadioGroup>
+    <Button
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:background="@drawable/border"
+        android:layout_gravity="center" />
+</LinearLayout>
